@@ -23,16 +23,19 @@ To install and run this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/market-making-dex-bot.git
+    git clone https://github.com/davidtacer/mm-dex-web3.git
     ```
 
 2. Install the dependencies:
     ```bash
-    cd market-making-dex-bot
-    npm install
+    cd mm-dex-web3
+    npm or yarn install
     ```
 
-3. Create a `.env` file and configure your environment variables (see [Environment Variables](#environment-variables)).
+3. Copy `.env.sample` to `.env` file or and configure your environment variables (see [Environment Variables](#environment-variables)).
+   ```bash
+   cp .env.sample .env
+    ```
 
 4. Start the bot:
     ```bash
@@ -106,7 +109,7 @@ ERC20_TOKEN_ADDRESS=<your-erc20-token-address>
 ```
 - **ALCHEMY_API_KEY:** Your Alchemy API key for connecting to the Polygon network.
 -  **PRIVATE_KEY:** The private key of the wallet that will perform trades.
--  **BASE_TOKEN_ADDRESS:** The address of the base token used for trading.
+-  **BASE_TOKEN_ADDRESS:** The address of the base token used for trading. For Polygon, this is the WMATIC address: 0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270
 -  **ERC20_TOKEN_ADDRESS:** The address of the ERC20 token to be traded.
 
 ## Important Notes
